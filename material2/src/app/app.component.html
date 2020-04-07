@@ -1,3 +1,15 @@
+<ngx-spinner
+  bdColor='rgba(0, 0, 0, 0.9)'
+  size='large'
+  color='#fff'
+  type = "ball-scale-multiple"
+>
+  <p style='color: #fff;'>Carregando...</p>
+</ngx-spinner>
+<mat-spinner *ngIf="showSpinner"></mat-spinner>
+<button mat-button (click)="loadData()" *ngIf='!showSpinner'>Ok</button>
+
+<!--
 <div>
   <span [matBadge]='notifications' [matBadgeHidden] = 'notifications === 0'>Notification</span>
 </div>
@@ -30,3 +42,4 @@
 <div>
   <span matBadge='5' matBadgeColor='warn' matBadgeOverlap='false'>Notification</span>
 </div>
+-->
